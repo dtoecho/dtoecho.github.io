@@ -22,44 +22,19 @@ const projects: CollectionEntry<"projects">[] = (
 
 <Layout title={HOME.TITLE} description={HOME.DESCRIPTION}>
   <Container>
-    <h1 class="animate font-semibold text-black dark:text-white">
-      Introducing Astro Micro 🔬
-    </h1>
+    <!-- <h1 class="animate font-semibold text-black dark:text-white">
+      ✍️
+    </h1> -->
     <div class="space-y-16">
       <section>
         <article class="space-y-4">
           <span class="animate">
             <p>
-              Astro Micro is an accessible theme for <Link
-                href="https://astro.build/">Astro</Link
-              >. It's a fork of
-              <Link href="https://github.com/markhorn-dev"> Mark Horn's </Link> popular
-              theme <Link href="https://astro.build/themes/details/astronano/"
-                >Astro Nano</Link
-              >. Like Nano, Micro comes with zero frameworks installed.
+              🤓꾸준히, 의미있는 학습을 기록하기 위한 공간입니다.🤓
             </p>
             <p>
-              Micro adds features like <Link href="https://pagefind.app/"
-                >Pagefind</Link
-              > for search, <Link href="https://giscus.app">Giscus</Link> for comments,
-              and more. For a full list of changes, see this <Link
-                href="/blog/00-micro-changelog">blog post</Link
-              >.
-            </p>
-          </span>
-          <span class="animate">
-            <p>
-              Micro still comes with everything great about Nano — full type
-              safety, a sitemap, an RSS feed, and Markdown + MDX support. Styled
-              with TailwindCSS and preconfigured with system, light, and dark
-              themes.
-            </p>
-            <p>
-              Visit
-              <Link href="https://github.com/trevortylerlee/astro-micro">
-                Astro Micro on GitHub
-              </Link>
-              to fork the repository to get started.
+              아직 프로그래밍 초보자 단계이지만 초보자의 시선에서 하나하나 성장해 나가는 과정을 기록해 보고 싶어 블로그를 시작했습니다. 
+              어디로 갈지 모르겠고, 어느 분야를 좋아하고 또 지속해 나갈 수 있을지 항상 고민하고 있습니다.
             </p>
           </span>
         </article>
@@ -67,8 +42,8 @@ const projects: CollectionEntry<"projects">[] = (
 
       <section class="animate space-y-6">
         <div class="flex flex-wrap items-center justify-between gap-y-2">
-          <h2 class="font-semibold text-black dark:text-white">Latest posts</h2>
-          <Link href="/blog"> See all posts </Link>
+          <h2 class="font-semibold text-black dark:text-white">최근 포스트</h2>
+          <Link href="/blog">모두보기</Link>
         </div>
         <ul class="not-prose flex flex-col gap-4">
           {
@@ -81,7 +56,7 @@ const projects: CollectionEntry<"projects">[] = (
         </ul>
       </section>
 
-      <section class="animate space-y-6">
+      <!-- <section class="animate space-y-6">
         <div class="flex flex-wrap items-center justify-between gap-y-2">
           <h2 class="font-semibold text-black dark:text-white">
             Recent projects
@@ -97,16 +72,10 @@ const projects: CollectionEntry<"projects">[] = (
             ))
           }
         </ul>
-      </section>
+      </section> -->
 
       <section class="animate space-y-4">
-        <h2 class="font-semibold text-black dark:text-white">Let's Connect</h2>
-        <article>
-          <p>
-            If you want to get in touch with me about something or just to say
-            hi, reach out on social media or send me an email.
-          </p>
-        </article>
+  
         <ul class="not-prose flex flex-wrap gap-2">
           {
             SOCIALS.map((SOCIAL) => (

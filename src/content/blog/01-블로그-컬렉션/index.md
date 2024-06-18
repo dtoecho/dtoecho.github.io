@@ -1,6 +1,6 @@
 ---
-title: "Blog Collection"
-description: "How to add posts to the blog."
+title: "블로그 컬렉션"
+description: "블로그에 글을 추가하는 방법"
 date: "2024-03-21"
 ---
 
