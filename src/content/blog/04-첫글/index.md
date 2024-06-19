@@ -1,5 +1,8 @@
 ---
-title: test
-description: 블로그에 글을 추가하는 방법
-date: 2024-06-02
+title: "첫글"
+description: "첫글"
+date: 2024-06-18
 ---
+
+---
+## Working with the `blog` collection:
