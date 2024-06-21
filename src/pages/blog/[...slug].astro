@@ -22,30 +22,53 @@ type Props = CollectionEntry<"blog">;
 
 const posts = await getCollection("blog");
 
+// function getNextPost() {
+//   let postIndex;
+//   for (const post of posts) {
+//     if (post.slug === Astro.params.slug) {
+//       postIndex = posts.indexOf(post);
+//       return posts[postIndex + 1];
+//     }
+//   }
+// }
 function getNextPost() {
   let postIndex;
   for (const post of posts) {
     if (post.slug === Astro.params.slug) {
       postIndex = posts.indexOf(post);
-      // return posts[postIndex + 1];
-      return {
-        ...posts[postIndex + 1],
-        slug: `/blog/${posts[postIndex + 1].slug}`
-      };
+      if (postIndex < posts.length - 1) {
+        return {
+          ...posts[postIndex + 1],
+          slug: `/blog/${posts[postIndex + 1].slug}`
+        };
+      }
+      return null;
     }
   }
 }
+
+// function getPrevPost() {
+//   let postIndex;
+//   for (const post of posts) {
+//     if (post.slug === Astro.params.slug) {
+//       postIndex = posts.indexOf(post);
+//       return posts[postIndex - 1];
+//     }
+//   }
+// }
 
 function getPrevPost() {
   let postIndex;
   for (const post of posts) {
     if (post.slug === Astro.params.slug) {
       postIndex = posts.indexOf(post);
-      // return posts[postIndex - 1];
-      return {
-        ...posts[postIndex - 1],
-        slug: `/blog/${posts[postIndex - 1].slug}`,
-      };
+      if (postIndex > 0) {
+        return {
+          ...posts[postIndex - 1],
+          slug: `/blog/${posts[postIndex - 1].slug}`,
+        };
+      }
+      return null;
     }
   }
 }
