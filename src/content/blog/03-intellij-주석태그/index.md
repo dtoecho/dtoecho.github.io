@@ -1,5 +1,5 @@
 ---
-title: "[Intellij] 주석 태그 & 키워드 활용"
+title: "[Intellij] 주석 태그"
 description: TODO, FIXME, Custom Comment Tag
 date: 2024-06-21
 ---
