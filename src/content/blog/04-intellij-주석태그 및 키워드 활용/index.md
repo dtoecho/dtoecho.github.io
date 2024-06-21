@@ -47,5 +47,4 @@ date: 2024-06-21
 ```
 // TODO: 추후에 하드코딩을 개선해야 합니다.
 ```
-
-![[../../../../public/todo/todo.png]]
+![TODO](../../../../public/todo/todo.png)
