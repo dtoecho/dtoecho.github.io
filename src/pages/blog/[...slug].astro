@@ -27,7 +27,11 @@ function getNextPost() {
   for (const post of posts) {
     if (post.slug === Astro.params.slug) {
       postIndex = posts.indexOf(post);
-      return posts[postIndex + 1];
+      // return posts[postIndex + 1];
+      return {
+        ...posts[postIndex + 1],
+        slug: `/blog/${posts[postIndex + 1].slug}`
+      };
     }
   }
 }
@@ -37,7 +41,11 @@ function getPrevPost() {
   for (const post of posts) {
     if (post.slug === Astro.params.slug) {
       postIndex = posts.indexOf(post);
-      return posts[postIndex - 1];
+      // return posts[postIndex - 1];
+      return {
+        ...posts[postIndex - 1],
+        slug: `/blog/${posts[postIndex - 1].slug}`,
+      };
     }
   }
 }
