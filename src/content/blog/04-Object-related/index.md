@@ -5,7 +5,7 @@ description: Object 활용
 ---
 ---
 
-## 1 . instanceof
+## 1) instanceof
 ---
 
 ```java
